@@ -40,8 +40,8 @@ public class impleCRUD implements CRUD {
      * @return
      */
     public Clase[][] ReadAll() {
-        // TODO implement here
-        return null;
+
+        return horario;
     }
 
     /**
