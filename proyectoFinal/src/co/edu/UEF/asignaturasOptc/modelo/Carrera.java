@@ -39,7 +39,7 @@ public class Carrera {
      * @param creditos 
      * @param clases
      */
-    public void Carrera(String nombre, int duracionEst, int creditos, Clases clases) {
+    public void Carrera(String nombre, int duracionEst, int creditos, Clase[] clases) {
         // TODO implement here
     }
 
