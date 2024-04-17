@@ -1,23 +1,17 @@
 package co.edu.UEF.asignaturasOptc.vista;
+import co.edu.UEF.asignaturasOptc.modelo.Carrera;
+import co.edu.UEF.asignaturasOptc.modelo.Clase;
 
-import java.util.*;
 
 /**
  * 
  */
 public class Principal {
-
-    /**
-     * Default constructor
-     */
-    public Principal() {
-    }
-
-    /**
-     * @param args
-     */
+    
     public static void main(String args) {
-        // TODO implement here
+    	Carrera Ing_Sistemas = new Carrera("Ingenieria de Sistemas", 8, 150, /*como hacer un array de clases*/);
+    	
+        Clase Paradigmas = new Clase("Paradigmas de programacion", "UEF3718", ,9, [1][16]);
     }
 
 }
