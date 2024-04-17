@@ -10,7 +10,7 @@ import co.edu.UEF.asignaturasOptc.modelo.Clase;
 public interface OpeArchivo {
 
   
-    public void serializar(Clase horario, String path, String name);
+    public void serializar(Clase[][] horario, String path, String name);
 
     /**
      * @param path 
