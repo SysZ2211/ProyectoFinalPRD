@@ -24,7 +24,7 @@ public class ImpleOpeArchivo implements OpeArchivo {
 
 
     public Clase[][] deserializar(String path, String name) {
-    	Clase[][] a= null;
+    	Clase[][] b= null;
 		
 		try {
 			FileInputStream fis = new FileInputStream(path + name);
@@ -42,7 +42,7 @@ public class ImpleOpeArchivo implements OpeArchivo {
 			c.printStackTrace();
 		}
 	
-		return a;
+		return b;
 	}
 
     
