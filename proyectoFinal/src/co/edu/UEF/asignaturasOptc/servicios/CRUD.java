@@ -3,7 +3,7 @@ import co.edu.UEF.asignaturasOptc.modelo.Clase;
 
 
 
-import co.edu.UEF.asignaturasOptc.modelo.Clase;
+
 
 /**
  * 
