@@ -23,9 +23,7 @@ public class Carrera {
      */
     private int duracionEst;
 
-    /**
-     * 
-     */
+    
     private int creditos;
 
     /**

@@ -4,7 +4,7 @@ package co.edu.UEF.asignaturasOptc.servicios;
 
 import co.edu.UEF.asignaturasOptc.modelo.Clase;
 
-import co.edu.UEF.asignaturasOptc.modelo.Clase;
+
 
 /**
  * 
