@@ -26,8 +26,8 @@ public class impleCRUD implements CRUD {
      */
 
     public String Create(Clase clase) {
-    	for (int i = 0; i < clase.getHorario.length; i++){
-    		if(horario[clase.getHorario[0][i]][clase.getHorario[1][i]] == null)
+    	for (int i = 0; i < clase.getHorario().length; i++){
+    		if(horario[clase.getHorario()[0][i]][clase.getHorario[1][i]] == null)
     			horario[clase.getHorario[0][i]][clase.getHorario[1][i]] = clase;
     	}
         return "";
