@@ -26,7 +26,7 @@ public class Clase {
     /**
      * 
      */
-    private Carrera[] carreras;
+
 
     /**
      * 
