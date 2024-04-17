@@ -2,15 +2,15 @@ package co.edu.UEF.asignaturasOptc.servicios;
 
 import java.util.*;
 
+import co.edu.UEF.asignaturasOptc.modelo.Clase;
+
 /**
  * 
  */
 public class impleCRUD implements CRUD {
 
-    /**
-     * Default constructor
-     */
     public impleCRUD() {
+    	horario = new Clase[6][10];
     }
 
     /**
@@ -23,7 +23,10 @@ public class impleCRUD implements CRUD {
      * @return
      */
     public String Create(Clase clase) {
-        // TODO implement here
+    	for (int i = 0; i < clase.getHorario.length; i++){
+    		if(horario[clase.getHorario[0][i]][clase.getHorario[1][i]] == null)
+    			horario[clase.getHorario[0][i]][clase.getHorario[1][i]] = clase;
+    	}
         return "";
     }
 
@@ -53,5 +56,6 @@ public class impleCRUD implements CRUD {
         // TODO implement here
         return null;
     }
+
 
 }
