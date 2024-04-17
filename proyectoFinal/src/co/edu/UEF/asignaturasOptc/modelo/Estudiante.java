@@ -27,14 +27,47 @@ public class Estudiante extends Usuario {
      * @param fechaInscripcion 
      * @param carreas
      */
-    public void Estudiante(int fechaInscripcion, Carrera[] carreas) {
-        // TODO implement here
-    }
+ 
+
+	@Override
+	public int calcularAntiguedad(int fechaActual) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public Estudiante(int fechaInscripcion, Carrera[] carreras) {
+		super();
+		this.fechaInscripcion = fechaInscripcion;
+		this.carreras = carreras;
+	}
+
+	@Override
+	public String toString() {
+		return "Estudiante [fechaInscripcion=" + fechaInscripcion + ", carreras=" + Arrays.toString(carreras)
+				+ ", getFechaInscripcion()=" + getFechaInscripcion() + ", getCarreras()="
+				+ Arrays.toString(getCarreras()) + "]";
+	}
+
+	public int getFechaInscripcion() {
+		return fechaInscripcion;
+	}
+
+	public void setFechaInscripcion(int fechaInscripcion) {
+		this.fechaInscripcion = fechaInscripcion;
+	}
+
+	public Carrera[] getCarreras() {
+		return carreras;
+	}
+
+	public void setCarreras(Carrera[] carreras) {
+		this.carreras = carreras;
+	}
 
     /**
      * @param fechaActual 
      * @return
      */
-    public abstract int calcularAntiguedad(int fechaActual);
+   
 
 }

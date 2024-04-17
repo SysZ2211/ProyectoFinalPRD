@@ -1,6 +1,8 @@
 package co.edu.UEF.asignaturasOptc.servicios;
 
-import java.util.*;
+
+
+import co.edu.UEF.asignaturasOptc.modelo.Clase;
 
 import co.edu.UEF.asignaturasOptc.modelo.Clase;
 
@@ -22,6 +24,7 @@ public class impleCRUD implements CRUD {
      * @param clase 
      * @return
      */
+
     public String Create(Clase clase) {
     	for (int i = 0; i < clase.getHorario.length; i++){
     		if(horario[clase.getHorario[0][i]][clase.getHorario[1][i]] == null)
@@ -29,6 +32,8 @@ public class impleCRUD implements CRUD {
     	}
         return "";
     }
+
+
 
     /**
      * @return
@@ -56,6 +61,5 @@ public class impleCRUD implements CRUD {
         // TODO implement here
         return null;
     }
-
 
 }

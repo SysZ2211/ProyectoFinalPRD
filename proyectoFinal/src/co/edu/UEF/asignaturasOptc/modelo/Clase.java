@@ -1,6 +1,6 @@
 package co.edu.UEF.asignaturasOptc.modelo;
 
-import java.util.*;
+import java.util.Arrays;
 
 /**
  * 
@@ -38,6 +38,61 @@ public class Clase {
      */
     private double[][] horario;
 
+	public Clase(String nombre, String codigo, Carrera[] carreras, int costo, double[][] horario) {
+		super();
+		this.nombre = nombre;
+		this.codigo = codigo;
+		this.carreras = carreras;
+		this.costo = costo;
+		this.horario = horario;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
+	}
+
+	public Carrera[] getCarreras() {
+		return carreras;
+	}
+
+	public void setCarreras(Carrera[] carreras) {
+		this.carreras = carreras;
+	}
+
+	public int getCosto() {
+		return costo;
+	}
+
+	public void setCosto(int costo) {
+		this.costo = costo;
+	}
+
+	public double[][] getHorario() {
+		return horario;
+	}
+
+	public void setHorario(double[][] horario) {
+		this.horario = horario;
+	}
+
+	@Override
+	public String toString() {
+		return "Clase [nombre=" + nombre + ", codigo=" + codigo + ", carreras=" + Arrays.toString(carreras) + ", costo="
+				+ costo + ", horario=" + Arrays.toString(horario) + "]";
+	}
+
     /**
      * @param nombre 
      * @param codigo 
@@ -45,8 +100,5 @@ public class Clase {
      * @param costo 
      * @param horario
      */
-    public void Clase(String nombre, String codigo, Carrera[][] carreras, int costo, double[][] horario) {
-        // TODO implement here
-    }
-
+    
 }
