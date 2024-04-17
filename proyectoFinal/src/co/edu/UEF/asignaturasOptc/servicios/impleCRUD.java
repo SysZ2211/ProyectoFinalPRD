@@ -27,10 +27,11 @@ public class impleCRUD implements CRUD {
 
     public String Create(Clase clase) {
     	for (int i = 0; i < clase.getHorario().length; i++){
-    		if(horario[clase.getHorario()[0][i]][clase.getHorario[1][i]] == null)
-    			horario[clase.getHorario[0][i]][clase.getHorario[1][i]] = clase;
+    		if(horario[clase.getHorario()[0][i]][clase.getHorario()[1][i]] == null)
+    			horario[clase.getHorario()[0][i]][clase.getHorario()[1][i]] = clase;
+    		else return "Clase elegida genera conflicto";
     	}
-        return "";
+        return "Clase "+ clase.getCodigo()+" ha sido asignada con exito";
     }
 
 
