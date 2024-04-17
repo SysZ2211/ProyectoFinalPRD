@@ -38,11 +38,10 @@ public class Clase {
      */
     private int[][] horario;
 
-	public Clase(String nombre, String codigo, Carrera[] carreras, int costo, int[][] horario) {
+	public Clase(String nombre, String codigo, int costo, int[][] horario) {
 		super();
 		this.nombre = nombre;
 		this.codigo = codigo;
-		this.carreras = carreras;
 		this.costo = costo;
 		this.horario = horario;
 	}
@@ -63,14 +62,6 @@ public class Clase {
 		this.codigo = codigo;
 	}
 
-	public Carrera[] getCarreras() {
-		return carreras;
-	}
-
-	public void setCarreras(Carrera[] carreras) {
-		this.carreras = carreras;
-	}
-
 	public int getCosto() {
 		return costo;
 	}
@@ -89,7 +80,7 @@ public class Clase {
 
 	@Override
 	public String toString() {
-		return "Clase [nombre=" + nombre + ", codigo=" + codigo + ", carreras=" + Arrays.toString(carreras) + ", costo="
+		return "Clase [nombre=" + nombre + ", codigo=" + codigo + ", costo="
 				+ costo + ", horario=" + Arrays.toString(horario) + "]";
 	}
 
