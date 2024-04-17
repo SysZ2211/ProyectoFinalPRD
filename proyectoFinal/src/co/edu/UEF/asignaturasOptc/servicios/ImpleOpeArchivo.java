@@ -1,6 +1,8 @@
 package co.edu.UEF.asignaturasOptc.servicios;
 
-import java.util.*;
+
+
+import co.edu.UEF.asignaturasOptc.modelo.Clase;
 
 /**
  * 
@@ -13,23 +15,16 @@ public class ImpleOpeArchivo implements OpeArchivo {
     public ImpleOpeArchivo() {
     }
 
-    /**
-     * @param horario 
-     * @param path 
-     * @param name String
-     */
-    public void serializar(Horario horario, String path, void name String) {
-        // TODO implement here
-    }
 
-    /**
-     * @param path 
-     * @param name 
-     * @return
-     */
-    public Horario[][] deserializar(String path, String name) {
+    public Clase[][] deserializar(String path, String name) {
         // TODO implement here
         return null;
     }
+
+	@Override
+	public void serializar(Clase horario, String path, String name) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

@@ -1,6 +1,8 @@
 package co.edu.UEF.asignaturasOptc.servicios;
 
-import java.util.*;
+
+
+import co.edu.UEF.asignaturasOptc.modelo.Clase;
 
 /**
  * 
@@ -22,10 +24,6 @@ public class impleCRUD implements CRUD {
      * @param clase 
      * @return
      */
-    public String Create(Clase clase) {
-        // TODO implement here
-        return "";
-    }
 
     /**
      * @return
@@ -53,5 +51,12 @@ public class impleCRUD implements CRUD {
         // TODO implement here
         return null;
     }
+
+	@Override
+	public String Create(Clase clase) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 
 }
