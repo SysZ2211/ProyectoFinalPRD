@@ -7,11 +7,6 @@ import java.util.*;
  */
 public class Estudiante extends Usuario {
 
-    /**
-     * Default constructor
-     */
-    public Estudiante() {
-    }
 
     /**
      * 
@@ -35,10 +30,11 @@ public class Estudiante extends Usuario {
 		return 0;
 	}
 
-	public Estudiante(int fechaInscripcion, Carrera[] carreras) {
-		super();
+	public Estudiante(String nombre, String nUsuario, String contrasegna, int fechaNacimiento, char sexo,
+			Carrera[] carreras, int fechaInscripcion ) {
+		super(contrasegna, contrasegna, contrasegna, fechaInscripcion, sexo, carreras);
 		this.fechaInscripcion = fechaInscripcion;
-		this.carreras = carreras;
+
 	}
 
 	@Override

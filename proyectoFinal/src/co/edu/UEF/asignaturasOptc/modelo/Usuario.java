@@ -7,11 +7,6 @@ import java.util.Arrays;
  */
 public abstract class Usuario {
 
-    /**
-     * Default constructor
-     */
-    public Usuario() {
-    }
 
     /**
      * 

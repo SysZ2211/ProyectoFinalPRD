@@ -7,11 +7,6 @@ package co.edu.UEF.asignaturasOptc.modelo;
  */
 public class Profesor extends Usuario {
 
-    /**
-     * Default constructor
-     */
-    public Profesor() {
-    }
 
     /**
      * 
@@ -34,8 +29,9 @@ public class Profesor extends Usuario {
 		return 0;
 	}
 
-	public Profesor(String facultad, int fechaContrato) {
-		super();
+	public Profesor(String nombre, String nUsuario, String contrasegna, int fechaNacimiento, char sexo,
+			Carrera[] carrera, String facultad, int fechaContrato) {
+		super(facultad, facultad, facultad, fechaContrato, sexo, carrera);
 		this.facultad = facultad;
 		this.fechaContrato = fechaContrato;
 	}
