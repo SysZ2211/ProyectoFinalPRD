@@ -45,7 +45,7 @@ public class ImpleOpeArchivo implements OpeArchivo {
 		return a;
 	}
 
-    
+    //n
 
 	@Override
 	public void serializar(Clase[][] horario, String path, String name) {
