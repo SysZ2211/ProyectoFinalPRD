@@ -10,11 +10,7 @@ import co.edu.UEF.asignaturasOptc.modelo.Clase;
  */
 public interface CRUD {
 
-    /**
-     * @param clase 
-     * @return
-     */
-    public String Create(Clase clase);
+        public String Create(Clase clase);
 
     /**
      * @return
@@ -25,7 +21,7 @@ public interface CRUD {
      * @param clase 
      * @param cod 
      * @return
-     */
+a     */
     public String Update(Clase clase, String cod);
 
     /**
