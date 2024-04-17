@@ -30,7 +30,7 @@ public class ImpleOpeArchivo implements OpeArchivo {
 			FileInputStream fis = new FileInputStream(path + name);
 			ObjectInputStream ois = new ObjectInputStream(fis);
 			
-			a = (Clase[][]) ois.readObject();
+			b = (Clase[][]) ois.readObject();
 			
 			ois.close();
 			fis.close();
