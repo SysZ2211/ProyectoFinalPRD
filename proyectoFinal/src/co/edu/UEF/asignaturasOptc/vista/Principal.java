@@ -51,7 +51,7 @@ System.out.println("Elija una opción:"+"\n"+ "1. Pedir Objeto"+"\n"+"2. Read"+"
     			
     			for (int i = 0; i < Hunal.ReadAll().length; i++) {
     				for (int j = 0; j < Hunal.ReadAll()[0].length; j++) {
-    					System.out.print(Hunal.ReadAll()[i][j]);
+    					System.out.print(Hunal.ReadAll()[i][j]+ " ");
     				}
     				System.out.println();
     			}
