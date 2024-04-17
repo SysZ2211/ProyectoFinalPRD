@@ -36,9 +36,9 @@ public class Clase {
     /**
      * 
      */
-    private double[][] horario;
+    private int[][] horario;
 
-	public Clase(String nombre, String codigo, Carrera[] carreras, int costo, double[][] horario) {
+	public Clase(String nombre, String codigo, Carrera[] carreras, int costo, int[][] horario) {
 		super();
 		this.nombre = nombre;
 		this.codigo = codigo;
@@ -79,11 +79,11 @@ public class Clase {
 		this.costo = costo;
 	}
 
-	public double[][] getHorario() {
+	public int[][] getHorario() {
 		return horario;
 	}
 
-	public void setHorario(double[][] horario) {
+	public void setHorario(int[][] horario) {
 		this.horario = horario;
 	}
 
