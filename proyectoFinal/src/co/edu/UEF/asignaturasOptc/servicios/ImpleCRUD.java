@@ -124,7 +124,7 @@ public class ImpleCRUD implements CRUD {
     				traduccion += 700+(100*(horario[i][j])) + " - "+ 700+100+(100*(horario[i][j]));
     			}
     			if (horario[i][0] == 3) {
-    				traduccion += "Juevez:";
+    				traduccion += "Jueves:";
     				traduccion += 700+(100*(horario[i][j])) + " - "+ 700+100+(100*(horario[i][j]));
     			}
     			if (horario[i][0] == 4) {
