@@ -92,7 +92,11 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Ho
     		}
     		if (opcion == 4) {//DELETE
     			System.out.println(rojo+"CUIDADO. ESTA ACCIÓN ES IRREVERSIBLE.");
-    			System.out.println("Escoja el horario que va a eliminar. ");
+    			System.out.println("Escoja la clase que va a eliminar. ");
+    			
+    			String code= in.nextLine();
+    			
+    			Hunal.Delete(code);
     			
     		}
     		if (opcion == 5) {//SERIALIZAR
