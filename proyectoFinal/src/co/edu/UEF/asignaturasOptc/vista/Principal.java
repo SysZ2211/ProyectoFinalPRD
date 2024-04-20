@@ -9,9 +9,7 @@ import co.edu.UEF.asignaturasOptc.servicios.impleCRUD;
 
 
 
-/**
- * 
- */
+
 public class Principal {
     
     public static void main(String[] args) {
