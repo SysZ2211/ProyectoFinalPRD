@@ -106,5 +106,38 @@ public class ImpleCRUD implements CRUD {
     		horario[arr[0][i]][arr[1][i]] = null;
 		}
         return deleted;
-    }   
+    }  
+    public String traductorHorario (int[][] horario){
+    	String traduccion = "";
+    	for (int i = 0; i < horario.length; i++){
+    		for (int j = 0; j < horario[0].length; j++){
+    			if (horario[i][0] == 0) {
+    				traduccion += "Lunes:";
+    				traduccion += 700+(100*(horario[i][j])) + " - "+ 700+100+(100*(horario[i][j]));
+    			}
+    			if (horario[i][0] == 1) {
+    				traduccion += "Martes:";
+    				traduccion += 700+(100*(horario[i][j])) + " - "+ 700+100+(100*(horario[i][j]));
+    			}
+    			if (horario[i][0] == 2) {
+    				traduccion += "Miercoles:";
+    				traduccion += 700+(100*(horario[i][j])) + " - "+ 700+100+(100*(horario[i][j]));
+    			}
+    			if (horario[i][0] == 3) {
+    				traduccion += "Juevez:";
+    				traduccion += 700+(100*(horario[i][j])) + " - "+ 700+100+(100*(horario[i][j]));
+    			}
+    			if (horario[i][0] == 4) {
+    				traduccion += "Viernes:";
+    				traduccion += 700+(100*(horario[i][j])) + " - "+ 700+100+(100*(horario[i][j]));
+    			}
+    			if (horario[i][0] == 5) {
+    				traduccion += "Sabado:";
+    				traduccion += 700+(100*(horario[i][j])) + " - "+ 700+100+(100*(horario[i][j]));
+    			}
+    				
+    		}
+    	}
+    	return traduccion;
+    }
 }
