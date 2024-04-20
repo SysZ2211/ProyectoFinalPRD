@@ -11,6 +11,7 @@ public interface CRUD {
     /**
      * @return
      */
+    //pls funciona
     public Clase[][] ReadAll();
 
     /**
