@@ -50,7 +50,7 @@ public class Principal {
     	
     //PARA EDITAR EL MENU (ESTO ESTA PENDIENTE), HAY QUE EDITAR LAS OPCIONES EN EL STRING + IMPLEMENTAER LOS METODOS DENTRO DEL MENU
     	
-System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Read"+"\n"+"3. Update"+"\n"+"4. Delete"+"\n"+"5. Guardar Archivo"+"\n"+"6. Cargar Archivo"+"\n"+"7. Salir");
+System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Horario Actual"+"\n"+"3. Realizar Cambios"+"\n"+"4. Eliminar Horario"+"\n"+"5. Guardar Horario en PC"+"\n"+"6. Cargar Horario"+"\n"+"7. Salir");
     	
     	Scanner in = new Scanner(System.in);
     	int opcion;
@@ -91,7 +91,8 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Read"+
     			
     		}
     		if (opcion == 4) {//DELETE
-    			
+    			System.out.println(rojo+"CUIDADO. ESTA ACCIÓN ES IRREVERSIBLE.");
+    			System.out.println("Escoja el horario que va a eliminar. ");
     			
     		}
     		if (opcion == 5) {//SERIALIZAR
