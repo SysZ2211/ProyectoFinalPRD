@@ -38,7 +38,7 @@ public class Principal {
     	
     	
     	
-    	Clase[] clases1 = {Paradigmas,Estructuras};
+    	Clase[] clases1 = {Paradigmas,Estructuras, Create,Calculo,Elementos};
     	
     	
     	Carrera Ing_Sistemas = new Carrera("Ingenieria de Sistemas", 8, 150, clases1);
@@ -60,7 +60,10 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Read"+
     		
     		if (opcion == 1) {//CREATE
     			
-    			System.out.println("Estas son las clases disponibles con sus horarios:");
+    			System.out.println("Estas son las clases disponibles con sus horarios:"+"\n");
+    			for (int i = 0; i < clases1.length; i++) {
+					System.out.println("Nombre: "+clases1[i].getNombre() +" Código: "+ clases1[i].getCodigo()+ " Costo: "+clases1[i].getCosto()/*horario traducido*/);
+				}
     			
     			
     			
