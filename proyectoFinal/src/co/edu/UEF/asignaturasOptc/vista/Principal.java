@@ -1,11 +1,13 @@
 package co.edu.UEF.asignaturasOptc.vista;
+import java.util.Arrays;
 import java.util.Scanner;
 
 import co.edu.UEF.asignaturasOptc.modelo.Carrera;
 import co.edu.UEF.asignaturasOptc.modelo.Clase;
 import co.edu.UEF.asignaturasOptc.modelo.Estudiante;
 import co.edu.UEF.asignaturasOptc.modelo.Usuario;
-import co.edu.UEF.asignaturasOptc.servicios.impleCRUD;
+import co.edu.UEF.asignaturasOptc.servicios.ImpleCRUD;
+import co.edu.UEF.asignaturasOptc.servicios.ImpleOpeArchivo;
 
 
 
@@ -43,7 +45,9 @@ public class Principal {
     	Carrera[] carreras = new Carrera[] {Ing_Sistemas};
     	
     	Usuario unal = new Estudiante("J Mario Valencia", "JMValencia", "pepitoescalvo", 5111942, 'M', carreras, 2072022);
-    	impleCRUD Hunal = new impleCRUD();
+    	ImpleCRUD Hunal = new ImpleCRUD();
+    	ImpleOpeArchivo SaveFiles = new ImpleOpeArchivo();
+    	
     //PARA EDITAR EL MENU (ESTO ESTA PENDIENTE), HAY QUE EDITAR LAS OPCIONES EN EL STRING + IMPLEMENTAER LOS METODOS DENTRO DEL MENU
     	
 System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Read"+"\n"+"3. Update"+"\n"+"4. Delete"+"\n"+"5. Guardar Archivo"+"\n"+"6. Cargar Archivo"+"\n"+"7. Salir");
@@ -78,21 +82,33 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Read"+
     			}
     			
     		}
-    		if (opcion == 3) {
+    		if (opcion == 3) {//UPDATE
     			
     			
     			
     		}
-    		if (opcion == 4) {
+    		if (opcion == 4) {//DELETE
     			
     			
     		}
-    		if (opcion == 5) {
+    		if (opcion == 5) {//SERIALIZAR
+    			System.out.println("Ingrese la ubicacion de guardado");
+    			String ubi = in.nextLine();
     			
+    			System.out.println("Ingrese el nombre del archivo");
+    			String name = in.nextLine();
+    			
+    			SaveFiles.serializar(Hunal.getHorario(), ubi, name);
     			
     		}
-    		if (opcion == 6) {
+    		if (opcion == 6) {//DESERIALIZAR
+    				
+    			System.out.println("Ingrese la ubicacion de guardado");
+    			String ubi = in.nextLine();
     			
+    			System.out.println("Ingrese el nombre del archivo");
+    			String name = in.nextLine();
+    			System.out.println(Arrays.toString(SaveFiles.deserializar(ubi, name)));
     		}
    
     		System.out.println("Elija una opción:"+"\n"+ "1. Pedir Objeto"+"\n"+"2. Read"+"\n"+"3. Update"+"\n"+"4. Delete"+"\n"+"5. Guardar Archivo"+"\n"+"6. Cargar Archivo"+"\n"+"7. Salir");

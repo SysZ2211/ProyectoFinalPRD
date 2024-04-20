@@ -11,9 +11,9 @@ import co.edu.UEF.asignaturasOptc.modelo.Clase;
 /**
  * 
  */
-public class impleCRUD implements CRUD {
+public class ImpleCRUD implements CRUD {
 
-    public impleCRUD() {
+    public ImpleCRUD() {
     	horario = new Clase[10][6];
     }
 
@@ -22,7 +22,19 @@ public class impleCRUD implements CRUD {
      */
     private Clase[][] horario;
 
-    /**
+    public Clase[][] getHorario() {
+		return horario;
+	}
+
+
+
+	public void setHorario(Clase[][] horario) {
+		this.horario = horario;
+	}
+
+
+
+	/**
      * @param clase 
      * @return
      */
