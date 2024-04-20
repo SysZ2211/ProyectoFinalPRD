@@ -50,8 +50,17 @@ public class impleCRUD implements CRUD {
      * @return
      */
     public String Update(Clase clase, String cod) {
-        // TODO implement here
-        return "";
+    	
+    	for (int i = 0; i < horario.length; i++) {
+			for (int j = 0; j < horario[0].length; j++) {
+				if ( horario[i][j] != null && horario[i][j].getCodigo().equals(cod) == true) {
+					Delete(cod);
+					Create(clase);
+					return "La clase"+ cod + "ha sido actualizada correctamente.";
+				}
+			}
+		}
+        return "La clase que desea actualizar no existe.";
     }
 
     /**
@@ -59,8 +68,19 @@ public class impleCRUD implements CRUD {
      * @return
      */
     public Clase Delete(String cod) {
-        // TODO implement here
-        return null;
-    }
-
+        int[][] arr = new int[1][1];
+        Clase deleted = null;
+    	for (int i = 0; i < horario.length; i++) {
+			for (int j = 0; j < horario.length; j++) {
+				if (horario[i][j] != null && horario[i][j].getCodigo().equals(cod)) {
+					arr = horario[i][j].getHorario();
+					deleted = horario[i][j];
+				}	
+			}
+		}
+    	for (int i = 0; i < arr.length; i++) {
+    		horario[arr[0][i]][arr[1][i]] = null;
+		}
+        return deleted;
+    }   
 }
