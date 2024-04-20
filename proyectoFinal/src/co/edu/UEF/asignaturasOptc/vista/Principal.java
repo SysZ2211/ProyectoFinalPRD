@@ -30,7 +30,6 @@ public class Principal {
     	int[][] arr4 = new int[][]{{2,3}};
     	Clase Calculo = new Clase("Calculo", "UEF3718",5, arr4);
     	
-    	//x
     	
     
     	String rojo = "\033[31m";
