@@ -83,6 +83,51 @@ public class Clase {
 		return "Clase [nombre=" + nombre + ", codigo=" + codigo + ", costo="
 				+ costo + ", horario=" + Arrays.toString(horario) + "]";
 	}
+    public String traductorHorario (int[][] horario){
+    	String traduccion = "";
+    	for (int i = 0; i < horario.length; i++){
+    		for (int j = 0; j < horario[0].length; j++){
+    			if (horario[i][0] == 0) {
+    				traduccion += "Lunes:";
+    				int x = 700+(100*(horario[i][j]));
+    				int y = 700+100+(100*(horario[i][j]));
+    				traduccion += x + " - "+ y;
+    			}
+    			if (horario[i][0] == 1) {
+    				traduccion += "Martes:";
+    				int x = 700+(100*(horario[i][j]));
+    				int y = 700+100+(100*(horario[i][j]));
+    				traduccion += x + " - "+ y;
+    			}
+    			if (horario[i][0] == 2) {
+    				traduccion += "Miercoles:";
+    				int x = 700+(100*(horario[i][j]));
+    				int y = 700+100+(100*(horario[i][j]));
+    				traduccion += x + " - "+ y;
+    			}
+    			if (horario[i][0] == 3) {
+    				traduccion += "Juevez:";
+    				int x = 700+(100*(horario[i][j]));
+    				int y = 700+100+(100*(horario[i][j]));
+    				traduccion += x + " - "+ y;
+    			}
+    			if (horario[i][0] == 4) {
+    				traduccion += "Viernes:";
+    				int x = 700+(100*(horario[i][j]));
+    				int y = 700+100+(100*(horario[i][j]));
+    				traduccion += x + " - "+ y;
+    			}
+    			if (horario[i][0] == 5) {
+    				traduccion += "Sabado:";
+    				int x = 700+(100*(horario[i][j]));
+    				int y = 700+100+(100*(horario[i][j]));
+    				traduccion += x + " - "+ y;
+    			}
+    				
+    		}
+    	}
+    	return traduccion;
+    }
 
     /**
      * @param nombre 
