@@ -1,5 +1,4 @@
 package co.edu.UEF.asignaturasOptc.vista;
-import java.util.Arrays;
 import java.util.Scanner;
 
 import co.edu.UEF.asignaturasOptc.modelo.Carrera;
