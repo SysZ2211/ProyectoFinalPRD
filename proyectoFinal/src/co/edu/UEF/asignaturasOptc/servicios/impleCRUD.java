@@ -2,6 +2,8 @@ package co.edu.UEF.asignaturasOptc.servicios;
 
 
 
+import java.util.Iterator;
+
 import co.edu.UEF.asignaturasOptc.modelo.Clase;
 
 
@@ -26,7 +28,17 @@ public class impleCRUD implements CRUD {
      */
 
     public String Create(Clase clase) {
+    	
+    	for (int i = 0; i < horario.length; i++) {
+			for (int j = 0; j < horario[0].length; j++) {
+				if (horario[i][j]!=null && horario[i][j].getNombre()==clase.getNombre()&&horario[i][j].getCodigo()!=clase.getCodigo())
+					return "La clase "+ clase.getNombre()+ " Ya está reservada.";
+				
+			}
+		}
+    	
     	for (int i = 0; i < clase.getHorario().length; i++){
+    		
     		if(horario[clase.getHorario()[i][0]][clase.getHorario()[i][1]] == null)
     			horario[clase.getHorario()[i][0]][clase.getHorario()[i][1]] = clase;
     		else return "Clase elegida genera conflicto";

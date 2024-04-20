@@ -20,19 +20,19 @@ public class Principal {
     	Clase Paradigmas = new Clase("Paradigmas de programacion", "UEF3718",5, arr);
     	
     	
-    	
     	int[][] arr1 = new int[][]{{0,0},{1,0},{2,0}};
     	Clase Estructuras = new Clase("Estructuras de datos", "HJD6711",7, arr1);
     	
-    	
     	int[][] arr3 = new int[][]{{5,1},{4,3},{5,2}};
-    	Clase Create = new Clase("CreateCamps", "FGT2614",10, arr3);
-    	/*
-    	int[][] arr3 = new int[][]{{5,1},{2,3},{2,4}};
-    	Clase Paradigmas = new Clase("Paradigmas de programacion", "UEF3718",5, arr);
-    	int[][] arr4 = new int[][]{{5,1},{2,3},{2,4}};
-    	Clase Paradigmas = new Clase("Paradigmas de programacion", "UEF3718",5, arr);
-    	**/
+    	Clase Create = new Clase("CreateCamps 1", "FGT2614",10, arr3);
+    	
+    	int[][] arr2 = new int[][]{{5,1},{2,3}};
+    	Clase Elementos = new Clase("Elementos de lógica computacional", "KLM3181",6, arr2);
+    	
+    	int[][] arr4 = new int[][]{{2,3}};
+    	Clase Calculo = new Clase("Calculo", "UEF3718",5, arr4);
+    	
+    	
     	
     
     	String rojo = "\033[31m";
@@ -59,7 +59,7 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Read"+
     		
     		if (opcion == 1) {//CREATE
     			
-    			
+    			System.out.println("Estas son las clases disponibles con sus horarios:");
     			
     			
     			
@@ -67,7 +67,7 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Read"+
     			
     			System.out.println(Hunal.Create(Paradigmas));
 
-    			System.out.println(Hunal.Create(Estructuras));
+    			
     			
     			
     		}
