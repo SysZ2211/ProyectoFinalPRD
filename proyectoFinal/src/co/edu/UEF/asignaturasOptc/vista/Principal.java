@@ -16,7 +16,10 @@ import co.edu.UEF.asignaturasOptc.servicios.impleCRUD;
 public class Principal {
     
     public static void main(String[] args) {
+
     	int[][] arr = new int[][]{{5,1},{2,3},{2,4}};
+
+    	
     	
     	Clase Paradigmas = new Clase("Paradigmas de programacion", "UEF3718",5, arr);
     
