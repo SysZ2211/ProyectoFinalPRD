@@ -112,6 +112,9 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Read"+
     			System.out.println("Ingrese el nombre del archivo");
     			String name = in.nextLine();
     			System.out.println(Arrays.toString(SaveFiles.deserializar(ubi, name)));
+    			
+    			
+    			Hunal.setHorario(SaveFiles.deserializar(ubi, name));
     		}
    
     		System.out.println("Elija una opción:"+"\n"+ "1. Pedir Objeto"+"\n"+"2. Read"+"\n"+"3. Update"+"\n"+"4. Delete"+"\n"+"5. Guardar Archivo"+"\n"+"6. Cargar Archivo"+"\n"+"7. Salir");
