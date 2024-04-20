@@ -12,7 +12,7 @@ import co.edu.UEF.asignaturasOptc.modelo.Clase;
 public class impleCRUD implements CRUD {
 
     public impleCRUD() {
-    	horario = new Clase[6][10];
+    	horario = new Clase[10][6];
     }
 
     /**
