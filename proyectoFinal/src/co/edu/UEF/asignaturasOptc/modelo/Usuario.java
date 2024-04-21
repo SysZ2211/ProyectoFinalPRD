@@ -1,11 +1,12 @@
 package co.edu.UEF.asignaturasOptc.modelo;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
 /**
  * 
  */
-public abstract class Usuario {
+public abstract class Usuario implements Serializable {
 
 
     /**

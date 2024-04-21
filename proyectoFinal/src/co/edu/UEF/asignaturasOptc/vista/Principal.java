@@ -161,8 +161,8 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Ho
     			for (int i = 0; i < clases1.length; i++) {
     				if(selection.equals(clases1[i].getNombre().toLowerCase())) {
     					Clase deleted = clases1[i];
-    					
-						System.out.println(Hunal.Delete(deleted.getCodigo()));
+    					System.out.println("La clase "+selection+" ha sido eliminada");
+						Hunal.Delete(deleted.getCodigo());
 						count++;
 					}
 				}
@@ -188,7 +188,7 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Ho
     			
     			System.out.println("Ingrese el nombre del archivo");
     			String name = in.nextLine();
-    			System.out.println(Arrays.toString(SaveFiles.deserializar(ubi, name)));
+    			System.out.println("El horario ha sido cargado exitosamente.");
     			
     			
     			Hunal.setHorario(SaveFiles.deserializar(ubi, name));
