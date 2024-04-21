@@ -151,9 +151,9 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Ho
     			
     			for (int i = 0; i < clases1.length; i++) {
     				if(selection.equals(clases1[i].getNombre().toLowerCase())) {
-    					Clase deleted = null;
+    					Clase deleted = clases1[i];
     					
-						System.out.println(Hunal.Delete(clases1[i].getCodigo()));
+						System.out.println(Hunal.Delete(deleted.getCodigo()));
 						count++;
 					}
 				}

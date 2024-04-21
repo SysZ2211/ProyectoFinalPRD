@@ -127,15 +127,16 @@ public class ImpleCRUD implements CRUD {
         int[][] arr = new int[1][1];
         Clase deleted = null;
     	for (int i = 0; i < horario.length; i++) {
-			for (int j = 0; j < horario.length; j++) {
+			for (int j = 0; j < horario[0].length; j++) {
 				if (horario[i][j] != null && horario[i][j].getCodigo().equals(cod)) {
 					arr = horario[i][j].getHorario();
 					deleted = horario[i][j];
+					break;
 				}	
 			}
 		}
     	for (int i = 0; i < arr.length; i++) {
-    		horario[arr[0][i]][arr[1][i]] = null;
+    		horario[arr[i][0]][arr[i][1]] = null;
 		}
         return deleted;
     }  
