@@ -124,7 +124,7 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Ho
 					for (int j = 0; j < Hunal.ReadAll()[0].length; j++) {
 						if (Hunal.getHorario()[i][j] != null && selection.equals(Hunal.getHorario()[i][j].getNombre().toLowerCase()) == true) {
 							updated = Hunal.getHorario()[i][j];
-							break;
+							break;//se rompe una vez encontrado
 						}
 					}
 				}
