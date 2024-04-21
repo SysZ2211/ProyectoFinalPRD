@@ -142,7 +142,7 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Ho
     			
     		}
     		if (opcion == 4) {//Delete
-    			System.out.println(rojo+"CUIDADO. ESTA ACCIÓN ES IRREVERSIBLE.");
+    			System.out.println(rojo+"CUIDADO. ESTA ACCIÓN ES IRREVERSIBLE."+"\u001B[0m");
     			System.out.println("Escoja la clase que va a eliminar");
     			
     			String selection= in.nextLine();
