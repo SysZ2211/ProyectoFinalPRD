@@ -10,8 +10,7 @@ public class Clase {
     /**
      * Default constructor
      */
-    public Clase() {
-    }
+    
 
     /**
      * 

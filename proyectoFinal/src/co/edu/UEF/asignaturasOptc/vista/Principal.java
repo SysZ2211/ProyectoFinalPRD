@@ -62,7 +62,7 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Ho
     			
     			System.out.println("Estas son las clases disponibles con sus horarios:"+"\n");
     			for (int i = 0; i < clases1.length; i++) {
-					System.out.println("Nombre: "+clases1[i].getNombre() +" Código: "+ clases1[i].getCodigo()+ " Costo: "+clases1[i].getCosto()+ " Horario: "+Hunal.traductorHorario(clases1[i].getHorario()));
+					System.out.println("Nombre: "+clases1[i].getNombre() +" Código: "+ clases1[i].getCodigo()+ " Costo: "+clases1[i].getCosto()+ " Horario: "+ clases1[i].traductorHorario(clases1[i].getHorario()));
 				}
     			
     			
