@@ -17,7 +17,7 @@ public class Principal {
     public static void main(String[] args) {
   //CLASES QUEMADAS O DISPONIBLES
     	int[][] arr = new int[][]{{5,1},{2,3},{2,4}};
-    	Clase Paradigmas = new Clase("Paradigmas de programacion", "UEF3718",5, arr);
+    	Clase Paradigmas = new Clase("Paradigmas de programación", "UEF3718",5, arr);
     	
     	
     	int[][] arr1 = new int[][]{{0,0},{1,0},{2,0}};
@@ -59,20 +59,25 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Ho
     	do{
     		
     		if (opcion == 1) {//CREATE
-    			
+    			System.out.println("Para escoger una clase, escriba el Nombre");
     			System.out.println("Estas son las clases disponibles con sus horarios:"+"\n");
     			for (int i = 0; i < clases1.length; i++) {
 					System.out.println("Nombre: "+clases1[i].getNombre() +" Código: "+ clases1[i].getCodigo()+ " Costo: "+clases1[i].getCosto()+ " Horario: "+ clases1[i].traductorHorario(clases1[i].getHorario()));
 				}
-    			
-    			
-    			
-    			
-    			
-    			System.out.println(Hunal.Create(Paradigmas));
-
-    			
-    			
+    			String selection = in.nextLine();
+    			int count =0;
+    			for (int i = 0; i < clases1.length; i++) {
+					
+    				if(selection.equals(clases1[i].getNombre())) {	
+						System.out.println(Hunal.Create(clases1[i]));
+						count++;
+					}
+					
+					
+					
+				}
+    			if(count==0)
+    				System.out.println("Inserte una clase válida.");
     			
     		}
     		if (opcion == 2) {//READ ALL
