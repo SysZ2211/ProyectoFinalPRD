@@ -14,7 +14,7 @@ import co.edu.UEF.asignaturasOptc.modelo.Clase;
 public class ImpleCRUD implements CRUD {
 
     public ImpleCRUD() {
-    	horario = new Clase[11][7];
+    	horario = new Clase[11][6];
     	
     }
     
@@ -63,9 +63,41 @@ public class ImpleCRUD implements CRUD {
     /**
      * @return
      */
-    public Clase[][] ReadAll() {
-
-        return horario;
+    public String[][] ReadAll() {
+    	String[][] jaja = new String[12][7];
+    	
+    	jaja[0][0]= " Horario ";
+    	jaja[0][1]="   Lunes";
+    	jaja[0][2]="   Martes";
+    	jaja[0][3]="   Miercoles";
+    	jaja[0][4]="   Jueves";
+    	jaja[0][5]="   Viernes";
+    	jaja[0][6]="   Sabado";
+    	
+    	jaja[1][0]="7AM - 8AM  ";
+    	jaja[2][0]="8AM - 9AM  ";
+    	jaja[3][0]="9AM - 10AM ";
+    	jaja[4][0]="10AM - 11AM";
+    	jaja[5][0]="11AM - 12PM";
+    	jaja[6][0]="12PM - 1PM ";
+    	jaja[7][0]="1PM - 2PM  ";
+    	jaja[8][0]="2PM - 3PM  ";
+    	jaja[9][0]="3PM - 4PM  ";
+    	jaja[10][0]="4PM - 5PM  ";
+    	jaja[11][0]="5PM - 6PM  ";
+    
+    	for (int i = 0; i < jaja.length; i++) {
+			for (int j = 0; j < jaja[0].length; j++) {
+				if ( i!= 0 && j != 0 ) {
+					if (horario[i-1][j-1]==null) {
+						 jaja[i][j]= "|libre|";
+					}
+					if(horario[i-1][j-1]!=null)
+					jaja[i][j]="|"+ horario[i-1][j-1].getNombre()+"|";
+				}
+			}
+		}
+    	return jaja;
     }
 
     /**

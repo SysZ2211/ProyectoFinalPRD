@@ -12,7 +12,7 @@ public interface CRUD {
      * @return
      */
     //pls funciona
-    public Clase[][] ReadAll();
+    public String[][] ReadAll();
 
     /**
      * @param clase 

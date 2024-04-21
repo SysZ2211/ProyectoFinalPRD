@@ -116,7 +116,7 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Ho
     			for (int i = 0; i < clases1.length; i++) {
     				if(selection2.equals(clases1[i].getNombre())) {	
 						
-    					System.out.println(Hunal.Update(clases1[i].getCodigo()));
+    					//System.out.println(Hunal.Update(clases1[i].getCodigo()));
 						
 						count++;
 					}
@@ -134,7 +134,9 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Ho
     			int count =0;
     			
     			for (int i = 0; i < clases1.length; i++) {
-    				if(selection.equals(clases1[i].getNombre())) {	
+    				if(selection.equals(clases1[i].getNombre())) {
+    					Clase deleted = null;
+    					
 						System.out.println(Hunal.Delete(clases1[i].getCodigo()));
 						count++;
 					}
@@ -167,7 +169,7 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Ho
     			Hunal.setHorario(SaveFiles.deserializar(ubi, name));
     		}
    
-    		System.out.println("Elija una opción:"+"\n"+ "1. Pedir Objeto"+"\n"+"2. Read"+"\n"+"3. Update"+"\n"+"4. Delete"+"\n"+"5. Guardar Archivo"+"\n"+"6. Cargar Archivo"+"\n"+"7. Salir");
+    		System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Horario Actual"+"\n"+"3. Realizar Cambios"+"\n"+"4. Eliminar Horario"+"\n"+"5. Guardar Horario en PC"+"\n"+"6. Cargar Horario"+"\n"+"7. Salir");
         	
         	
         	opcion = Integer.parseInt(in.nextLine()); 
