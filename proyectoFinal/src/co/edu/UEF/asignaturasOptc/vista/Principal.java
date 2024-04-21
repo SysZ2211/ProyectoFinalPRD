@@ -120,8 +120,8 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Ho
     			int count =0;
     			//CODIGO DE LA CLASE
     			Clase updated = null;
-    			for (int i = 0; i < Hunal.ReadAll().length; i++) {
-					for (int j = 0; j < Hunal.ReadAll()[0].length; j++) {
+    			for (int i = 0; i < Hunal.getHorario().length; i++) {
+					for (int j = 0; j < Hunal.getHorario()[0].length; j++) {
 						if (Hunal.getHorario()[i][j] != null && selection.equals(Hunal.getHorario()[i][j].getNombre().toLowerCase()) == true) {
 							updated = Hunal.getHorario()[i][j];
 							break;//se rompe una vez encontrado
