@@ -1,5 +1,6 @@
 package co.edu.UEF.asignaturasOptc.vista;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.Scanner;
 
 import co.edu.UEF.asignaturasOptc.modelo.Carrera;
@@ -67,14 +68,10 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Ho
     			String selection = in.nextLine();
     			int count =0;
     			for (int i = 0; i < clases1.length; i++) {
-					
     				if(selection.equals(clases1[i].getNombre())) {	
 						System.out.println(Hunal.Create(clases1[i]));
 						count++;
 					}
-					
-					
-					
 				}
     			if(count==0)
     				System.out.println("Inserte una clase válida.");
@@ -83,7 +80,9 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Ho
     		if (opcion == 2) {//READ ALL
     			
     			for (int i = 0; i < Hunal.ReadAll().length; i++) {
+    				
     				for (int j = 0; j < Hunal.ReadAll()[0].length; j++) {
+    					
     					System.out.print(Hunal.ReadAll()[i][j]+ " ");
     				}
     				System.out.println();
@@ -91,17 +90,58 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Ho
     			
     		}
     		if (opcion == 3) {//UPDATE
+    	
+    			System.out.println("Escoja la clase que quiere actualizar");
     			
+    			for (int i = 0; i < Hunal.ReadAll().length; i++) {
+    				for (int j = 0; j < Hunal.ReadAll()[0].length; j++) {
+    					
+    					System.out.print(Hunal.ReadAll()[i][j]+ " ");
+    				}
+    				System.out.println();
+    			}
+    			
+    			
+    			String selection= in.nextLine();
+    			int count =0;
+    			//CODIGO DE LA CLASE
+    			
+    			System.out.println("Escoja la clase que reemplazará la clase:");
+    			for (int i = 0; i < clases1.length; i++) {
+					System.out.println("Nombre: "+clases1[i].getNombre() +" Código: "+ clases1[i].getCodigo()+ " Costo: "+clases1[i].getCosto()+ " Horario: "+ clases1[i].traductorHorario(clases1[i].getHorario()));
+				}
+    			String selection2 = in.nextLine();
+    			//EL REEMPLAZO .CLASE
+    			
+    			for (int i = 0; i < clases1.length; i++) {
+    				if(selection2.equals(clases1[i].getNombre())) {	
+						
+    					System.out.println(Hunal.Update(clases1[i].getCodigo()));
+						
+						count++;
+					}
+				}
+    			if(count==0)
+    				System.out.println("Inserte una clase válida.");
     			
     			
     		}
-    		if (opcion == 4) {//DELETE
+    		if (opcion == 4) {//Delete
     			System.out.println(rojo+"CUIDADO. ESTA ACCIÓN ES IRREVERSIBLE.");
-    			System.out.println("Escoja la clase que va a eliminar. ");
+    			System.out.println("Escoja la clase que va a eliminar");
     			
-    			String code= in.nextLine();
+    			String selection= in.nextLine();
+    			int count =0;
     			
-    			Hunal.Delete(code);
+    			for (int i = 0; i < clases1.length; i++) {
+    				if(selection.equals(clases1[i].getNombre())) {	
+						System.out.println(Hunal.Delete(clases1[i].getCodigo()));
+						count++;
+					}
+				}
+    			if(count==0)
+    				System.out.println("Inserte una clase válida.");
+    			
     			
     		}
     		if (opcion == 5) {//SERIALIZAR
@@ -136,11 +176,7 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Ho
     	
     	
     	in.close();
-    	
-    	
-    	
-    	
-    	
+ 
 
 	}
 

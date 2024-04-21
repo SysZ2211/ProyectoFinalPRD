@@ -55,7 +55,7 @@ public class ImpleCRUD implements CRUD {
     			horario[clase.getHorario()[i][0]][clase.getHorario()[i][1]] = clase;
     		else return "Clase elegida genera conflicto";
     	}
-        return "La clase "+ clase.getNombre()+" ha sido asignada con éxito"+"("+clase.getCodigo()+")";
+        return "La clase "+ clase.getNombre()+" ha sido asignada con éxito"+" CODIGO :("+clase.getCodigo()+")";
     }
 
 
