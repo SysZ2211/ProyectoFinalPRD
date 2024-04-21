@@ -40,7 +40,7 @@ public class Principal {
     	Clase Fisica = new Clase("Fisica 1", "HDA8490",10, arr6);
     	
     	int[][] arr7 = new int[][]{{6,1},{4,0},{5,0}};
-    	Clase frances = new Clase("Frances 1", "JKS83161",5, arr7);
+    	Clase Frances = new Clase("Frances 1", "JKS83161",5, arr7);
     	
 
     	
@@ -51,7 +51,7 @@ public class Principal {
     	
     	
     	
-    	Clase[] clases1 = {Paradigmas,Estructuras, Create,Calculo,Elementos,Paradigmas2,Fisica,frances};
+    	Clase[] clases1 = {Paradigmas,Estructuras, Create,Calculo,Elementos,Paradigmas2,Fisica,Frances};
     	
     	
     	Carrera Ing_Sistemas = new Carrera("Ingenieria de Sistemas", 8, 150, clases1);
