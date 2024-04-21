@@ -202,7 +202,7 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Ho
     	System.out.println("Gracias");
     	
     	
-    	in.close();
+    	in.close();//ya no te necesito
  
 
 	}
