@@ -160,7 +160,7 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Ho
     			if(count==0)
     				System.out.println("Inserte una clase válida.");
     			
-    			
+    			//,
     		}
     		if (opcion == 5) {//SERIALIZAR
     			System.out.println("Ingrese la ubicacion de guardado");
