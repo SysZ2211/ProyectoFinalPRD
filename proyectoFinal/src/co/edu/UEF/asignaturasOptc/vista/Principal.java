@@ -33,13 +33,25 @@ public class Principal {
     	int[][] arr4 = new int[][]{{2,3}};
     	Clase Calculo = new Clase("Calculo", "UEF3718",5, arr4);
     	
+    	int[][] arr5 = new int[][]{{10,5},{5,1},{8,2}};
+    	Clase Paradigmas2 = new Clase("Paradigmas de programacion", "JSA2841",5, arr5);
+    	
+    	int[][] arr6 = new int[][]{{9,5},{10,5}};
+    	Clase Fisica = new Clase("Fisica 1", "HDA8490",10, arr6);
+    	
+    	int[][] arr7 = new int[][]{{6,1},{4,0},{5,0}};
+    	Clase frances = new Clase("Frances 1", "JKS83161",5, arr7);
+    	
+
+    	
+    	
     	
     
     	String rojo = "\033[31m";
     	
     	
     	
-    	Clase[] clases1 = {Paradigmas,Estructuras, Create,Calculo,Elementos};
+    	Clase[] clases1 = {Paradigmas,Estructuras, Create,Calculo,Elementos,Paradigmas2,Fisica,frances};
     	
     	
     	Carrera Ing_Sistemas = new Carrera("Ingenieria de Sistemas", 8, 150, clases1);
