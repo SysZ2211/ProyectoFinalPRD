@@ -68,11 +68,11 @@ public class ImpleCRUD implements CRUD {
     	
     	jaja[0][0]= " Horario ";
     	jaja[0][1]="   Lunes";
-    	jaja[0][2]="   Martes";
-    	jaja[0][3]="   Miercoles";
-    	jaja[0][4]="   Jueves";
-    	jaja[0][5]="   Viernes";
-    	jaja[0][6]="   Sabado";
+    	jaja[0][2]=" Martes";
+    	jaja[0][3]=" Miercoles";
+    	jaja[0][4]=" Jueves";
+    	jaja[0][5]=" Viernes";
+    	jaja[0][6]=" Sabado";
     	
     	jaja[1][0]="7AM - 8AM  ";
     	jaja[2][0]="8AM - 9AM  ";

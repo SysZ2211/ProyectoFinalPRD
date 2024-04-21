@@ -1,6 +1,6 @@
 package co.edu.UEF.asignaturasOptc.vista;
 import java.util.Arrays;
-import java.util.Iterator;
+
 import java.util.Scanner;
 
 import co.edu.UEF.asignaturasOptc.modelo.Carrera;
@@ -18,7 +18,7 @@ public class Principal {
     public static void main(String[] args) {
   //CLASES QUEMADAS O DISPONIBLES
     	int[][] arr = new int[][]{{5,1},{2,3},{2,4}};
-    	Clase Paradigmas = new Clase("Paradigmas de programación", "UEF3718",5, arr);
+    	Clase Paradigmas = new Clase("Paradigmas de programacion", "UEF3718",5, arr);
     	
     	
     	int[][] arr1 = new int[][]{{0,0},{1,0},{2,0}};
@@ -28,7 +28,7 @@ public class Principal {
     	Clase Create = new Clase("CreateCamps 1", "FGT2614",10, arr3);
     	
     	int[][] arr2 = new int[][]{{5,1},{2,3}};
-    	Clase Elementos = new Clase("Elementos de lógica computacional", "KLM3181",6, arr2);
+    	Clase Elementos = new Clase("Elementos de logica computacional", "KLM3181",6, arr2);
     	
     	int[][] arr4 = new int[][]{{2,3}};
     	Clase Calculo = new Clase("Calculo", "UEF3718",5, arr4);
@@ -66,9 +66,10 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Ho
 					System.out.println("Nombre: "+clases1[i].getNombre() +" Código: "+ clases1[i].getCodigo()+ " Costo: "+clases1[i].getCosto()+ " Horario: "+ clases1[i].traductorHorario(clases1[i].getHorario()));
 				}
     			String selection = in.nextLine();
+    			selection = selection.toLowerCase();
     			int count =0;
     			for (int i = 0; i < clases1.length; i++) {
-    				if(selection.equals(clases1[i].getNombre())) {	
+    				if(selection.equals(clases1[i].getNombre().toLowerCase())) {	
 						System.out.println(Hunal.Create(clases1[i]));
 						count++;
 					}
@@ -103,6 +104,7 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Ho
     			
     			
     			String selection= in.nextLine();
+    			selection = selection.toLowerCase();
     			int count =0;
     			//CODIGO DE LA CLASE
     			
@@ -111,10 +113,11 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Ho
 					System.out.println("Nombre: "+clases1[i].getNombre() +" Código: "+ clases1[i].getCodigo()+ " Costo: "+clases1[i].getCosto()+ " Horario: "+ clases1[i].traductorHorario(clases1[i].getHorario()));
 				}
     			String selection2 = in.nextLine();
+    			selection2 = selection2.toLowerCase();
     			//EL REEMPLAZO .CLASE
     			
     			for (int i = 0; i < clases1.length; i++) {
-    				if(selection2.equals(clases1[i].getNombre())) {	
+    				if(selection2.equals(clases1[i].getNombre().toLowerCase())) {	
 						
     					//System.out.println(Hunal.Update(clases1[i].getCodigo()));
 						
@@ -131,10 +134,11 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Ho
     			System.out.println("Escoja la clase que va a eliminar");
     			
     			String selection= in.nextLine();
+    			selection = selection.toLowerCase();
     			int count =0;
     			
     			for (int i = 0; i < clases1.length; i++) {
-    				if(selection.equals(clases1[i].getNombre())) {
+    				if(selection.equals(clases1[i].getNombre().toLowerCase())) {
     					Clase deleted = null;
     					
 						System.out.println(Hunal.Delete(clases1[i].getCodigo()));
