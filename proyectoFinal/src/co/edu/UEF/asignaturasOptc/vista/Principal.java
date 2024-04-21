@@ -119,6 +119,15 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Ho
     			selection = selection.toLowerCase();
     			int count =0;
     			//CODIGO DE LA CLASE
+    			Clase updated = null;
+    			for (int i = 0; i < Hunal.ReadAll().length; i++) {
+					for (int j = 0; j < Hunal.ReadAll()[0].length; j++) {
+						if (Hunal.getHorario()[i][j] != null && selection.equals(Hunal.getHorario()[i][j].getNombre().toLowerCase()) == true) {
+							updated = Hunal.getHorario()[i][j];
+							break;
+						}
+					}
+				}
     			
     			System.out.println("Escoja la clase que reemplazará la clase:");
     			for (int i = 0; i < clases1.length; i++) {
@@ -131,7 +140,7 @@ System.out.println("Elija una opción:"+"\n"+ "1. Asignar Clase"+"\n"+"2. Ver Ho
     			for (int i = 0; i < clases1.length; i++) {
     				if(selection2.equals(clases1[i].getNombre().toLowerCase())) {	
 						
-    					//System.out.println(Hunal.Update(clases1[i].getCodigo()));
+    					System.out.println(Hunal.Update(updated, clases1[i].getCodigo()));
 						
 						count++;
 					}
