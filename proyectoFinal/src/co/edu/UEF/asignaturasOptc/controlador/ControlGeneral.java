@@ -1,4 +1,4 @@
-package co.edu.UEF.controlador;
+package co.edu.UEF.asignaturasOptc.controlador;
 
 import java.net.URL;
 import java.util.ResourceBundle;

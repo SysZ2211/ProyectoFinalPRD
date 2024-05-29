@@ -1,4 +1,4 @@
-package co.edu.UEF.controlador;
+package co.edu.UEF.asignaturasOptc.controlador;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

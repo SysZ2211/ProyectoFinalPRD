@@ -13,6 +13,6 @@ module proyectoFinal {
 	opens co.edu.UEF.asignaturasOptc.vista to javafx.graphics, javafx.fxml;
 	
 	
-	opens co.edu.UEF.controlador to javafx.graphics, javafx.fxml;
+	opens co.edu.UEF.asignaturasOptc.controlador to javafx.graphics, javafx.fxml;
 	
 }
