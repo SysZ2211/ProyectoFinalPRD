@@ -23,7 +23,7 @@ import javafx.scene.control.ToggleGroup;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-public class ControlGeneral {
+public class ControlaGeneral {
 	
 	
 	//CLASES QUEMADAS O DISPONIBLES

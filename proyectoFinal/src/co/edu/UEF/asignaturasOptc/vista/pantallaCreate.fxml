@@ -6,7 +6,7 @@
 <?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.UEF.asignaturasOptc.controlador.ControlGeneral">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.UEF.asignaturasOptc.controlador.FormaCreate">
    <children>
       <Button fx:id="bttReservar" layoutX="269.0" layoutY="349.0" mnemonicParsing="false" onAction="#pressReservar" text="Reservar" />
       <Button fx:id="bttBackCreate" layoutX="268.0" layoutY="30.0" mnemonicParsing="false" onAction="#pressBackCreate" text="Regresar" />
