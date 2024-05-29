@@ -1,0 +1,20 @@
+.root {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+.label, .button, .text-area, .combo-box, .list-view, .table-view, .radio-button {
+    -fx-text-fill: black;
+}
+
+.text-field, .text-area {
+    -fx-control-inner-background: white;
+    -fx-text-fill: black;
+}
+
+.scroll-bar {
+    -fx-background-color: white;
+}
+#TitleScreen, #Time, #IdSmall, #IdBig{
+	-fx-text-fill: black;
+}
