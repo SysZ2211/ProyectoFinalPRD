@@ -27,5 +27,5 @@ import javafx.scene.layout.AnchorPane;
 
 		public static void main(String[] args) {
 			launch(args);
-		}
+		}//xd
 	}
