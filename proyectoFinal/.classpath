@@ -41,6 +41,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 	<classpathentry exported="true" kind="lib" path="/ProyectoFinalPRD/javafx-sdk-22.0.1/lib/javafx.properties"/>
 	<classpathentry exported="true" kind="lib" path="/ProyectoFinalPRD/javafx-sdk-22.0.1/lib/javafx.swing.jar">
 		<attributes>
@@ -48,6 +49,10 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="/ProyectoFinalPRD/javafx-sdk-22.0.1/lib/javafx.web.jar">
+=======
+	<classpathentry kind="lib" path="/ProyectoFinalPRD/javafx-sdk-22.0.1/lib/javafx.properties"/>
+	<classpathentry kind="lib" path="/ProyectoFinalPRD/javafx-sdk-22.0.1/lib/javafx.swing.jar">
+>>>>>>> branch 'master' of https://github.com/SysZ2211/ProyectoFinalPRD
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
